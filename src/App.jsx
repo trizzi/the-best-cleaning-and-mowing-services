@@ -1,15 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
 import './App.css';
 
 function App() {
+	const toggle = () => {
+		setIsOpen(!isOpen);
+	};
 	return (
 		<Router>
 			<div className='bg-gray-50 min-h-screen'>
-				<nav className='bg-green-700 text-white p-4 flex justify-between items-center'>
+				{/* <nav className='bg-green-700 text-white p-4 flex justify-between items-center'>
 					<h1 className='text-2xl font-bold'>The Best Cleaning & Mowing</h1>
 					<div className='space-x-6'>
 						<Link
@@ -28,8 +32,8 @@ function App() {
 							Contact
 						</Link>
 					</div>
-				</nav>
-
+				</nav> */}
+				<Navbar toggle={toggle} />
 				<Routes>
 					<Route
 						path='/'

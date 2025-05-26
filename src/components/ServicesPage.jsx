@@ -1,36 +1,42 @@
 import React from 'react';
 import { Card, CardContent } from './Card';
+import sample1 from '../assets/sample1.jpg';
+import sample2 from '../assets/sample2.jpg';
+import sample3 from '../assets/sample3.jpg';
+import sample4 from '../assets/sample4.jpg';
+import sample5 from '../assets/sample5 copy.jpg';
+import sample6 from '../assets/sample6.jpg';
 
 export default function ServicesPage() {
 	const services = [
 		{
 			title: 'Domestic Cleaning',
-			image: '/images/domestic-cleaning.png',
+			image: sample1,
 			desc: 'Thorough house cleaning for kitchens, bedrooms, bathrooms and lounges.',
 		},
 		{
 			title: 'Office & Commercial Cleaning',
-			image: '/images/office-cleaning.png',
+			image: sample2,
 			desc: 'Reliable cleaning services for office spaces and commercial premises.',
 		},
 		{
 			title: 'End of Tenancy Cleaning',
-			image: '/images/end-of-tenancy.png',
+			image: sample3,
 			desc: 'Detailed move-in and move-out cleaning for landlords and tenants.',
 		},
 		{
 			title: 'Lawn Mowing & Garden Care',
-			image: '/images/lawn-mowing.png',
+			image: sample6,
 			desc: 'Professional grass cutting and garden maintenance services.',
 		},
 		{
 			title: 'Pressure Washing',
-			image: '/images/pressure-washing.png',
+			image: sample5,
 			desc: 'Driveway, patio, and exterior cleaning using high-pressure washers.',
 		},
 		{
 			title: 'Carpet & Upholstery Cleaning',
-			image: '/images/carpet-cleaning.png',
+			image: sample4,
 			desc: 'Deep cleaning of carpets, rugs, and upholstered furniture.',
 		},
 	];
