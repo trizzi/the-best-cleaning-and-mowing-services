@@ -7,6 +7,17 @@ import sample4 from '../assets/sample4.jpg';
 import sample5 from '../assets/sample5 copy.jpg';
 import sample6 from '../assets/sample6.jpg';
 
+// Replace these with your new images later
+import sample7 from '../assets/sample1.jpg';
+import sample8 from '../assets/sample2.jpg';
+import sample9 from '../assets/sample3.jpg';
+import sample10 from '../assets/sample4.jpg';
+import sample11 from '../assets/sample5 copy.jpg';
+import sample12 from '../assets/sample6.jpg';
+import sample13 from '../assets/sample3.jpg';
+import sample14 from '../assets/sample4.jpg';
+import sample15 from '../assets/sample5 copy.jpg';
+
 export default function ServicesPage() {
 	const services = [
 		{
@@ -26,7 +37,7 @@ export default function ServicesPage() {
 		},
 		{
 			title: 'Lawn Mowing & Garden Care',
-			image: sample6,
+			image: sample4,
 			desc: 'Professional grass cutting and garden maintenance services.',
 		},
 		{
@@ -36,8 +47,53 @@ export default function ServicesPage() {
 		},
 		{
 			title: 'Carpet & Upholstery Cleaning',
-			image: sample4,
+			image: sample6,
 			desc: 'Deep cleaning of carpets, rugs, and upholstered furniture.',
+		},
+		{
+			title: 'Window Cleaning',
+			image: sample7,
+			desc: 'Streak-free window cleaning for homes and businesses.',
+		},
+		{
+			title: 'Gutter Cleaning',
+			image: sample8,
+			desc: 'Clear blocked gutters and prevent damage with regular cleaning.',
+		},
+		{
+			title: 'After-Builder Cleaning',
+			image: sample9,
+			desc: 'Remove dust, debris, and residue after renovation work.',
+		},
+		{
+			title: 'Oven & Appliance Cleaning',
+			image: sample10,
+			desc: 'Restore kitchen appliances to sparkling condition.',
+		},
+		{
+			title: 'Garden Waste Removal',
+			image: sample11,
+			desc: 'Quick and tidy removal of grass, branches, and garden waste.',
+		},
+		{
+			title: 'Move-in/Move-out Cleaning',
+			image: sample12,
+			desc: 'Detailed cleaning service before or after your move.',
+		},
+		{
+			title: 'Patio & Decking Care',
+			image: sample13,
+			desc: 'Maintain clean and safe outdoor spaces all year round.',
+		},
+		{
+			title: 'Commercial Grounds Care',
+			image: sample14,
+			desc: 'Professional upkeep for your business premises exterior.',
+		},
+		{
+			title: 'Deep Sanitisation Services',
+			image: sample15,
+			desc: 'Intensive sanitisation for residential and commercial properties.',
 		},
 	];
 
@@ -50,19 +106,22 @@ export default function ServicesPage() {
 				</p>
 			</header>
 
-			<section className='grid md:grid-cols-3 gap-6'>
+			<section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
 				{services.map(({ title, image, desc }) => (
 					<Card
 						key={title}
-						className='shadow-lg'>
+						className='shadow-lg hover:shadow-2xl hover:scale-[1.02] transition duration-300'>
 						<CardContent>
 							<img
 								src={image}
 								alt={title}
-								className='rounded-xl mb-4'
+								className='rounded-xl mb-4 h-48 w-full object-cover'
 							/>
-							<h2 className='text-xl font-semibold'>{title}</h2>
-							<p className='text-gray-600 mt-2'>{desc}</p>
+							<h2 className='text-xl font-semibold mb-2'>{title}</h2>
+							<p className='text-gray-600 text-sm mb-4'>{desc}</p>
+							<button className='inline-block bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-lg text-sm transition'>
+								Get a Quote
+							</button>
 						</CardContent>
 					</Card>
 				))}

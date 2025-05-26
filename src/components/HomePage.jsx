@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from './Card';
+import Reviews from './Reviews';
+import GetAQuotePage from './GetAQuotePage';
 import showcaseImg from '../assets/showcase-img copy 1.png';
 
 export default function HomePage() {
@@ -23,9 +25,7 @@ export default function HomePage() {
 							<h1 className='text-3xl md:text-3xl xl:text-5xl font-bold w-full lg:w-4/5 py-5 md:py-1 text-blue-600'>
 								<div>The Best Cleaning & Mowing Services</div>
 							</h1>
-							<div
-								className='relative md:text-xl pt-3 py-10'
-								time={2}>
+							<div className='relative md:text-xl pt-3 py-10 bg-white'>
 								professional cleaning and lawn care services in Harrow, London
 							</div>
 							<p>
@@ -50,7 +50,7 @@ export default function HomePage() {
 			</div>
 			<div className='bg-white text-gray-800 p-6 max-w-7xl mx-auto'>
 				<header className='text-center mb-10'>
-					<h1 className='text-4xl font-bold text-green-700'>
+					<h1 className='text-4xl font-bold text-blue-600'>
 						The Best Cleaning & Mowing Services
 					</h1>
 					<p className='mt-4 text-lg'>
@@ -81,6 +81,8 @@ export default function HomePage() {
 					))}
 				</section>
 			</div>
+			<GetAQuotePage />
+			<Reviews />
 		</>
 	);
 }

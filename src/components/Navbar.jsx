@@ -1,21 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react'; // install with: npm install lucide-react
 
-const Navbar = ({ toggle }) => {
+const Navbar = () => {
+	const [navOpen, setNavOpen] = useState(false);
+
 	return (
-		<nav>
-			<div className='bg-green-700 text-white flex justify-between items-center p-4'>
+		<nav className='bg-green-700 text-white'>
+			<div className='flex justify-between items-center p-4 max-w-7xl mx-auto'>
 				<Link
-					to='#'
-					className='pl-2 shrink-0'>
-					<h1 className='text-2xl font-bold'>The Best Cleaning & Mowing</h1>
+					to='/'
+					className='text-2xl font-bold'>
+					The Best Cleaning & Mowing
 				</Link>
+
+				{/* Hamburger */}
 				<div
-					className='px-8 cursor-pointer md:hidden'
-					onClick={toggle}>
-					<i className='fas fa-bars'></i>
+					className='md:hidden cursor-pointer'
+					onClick={() => setNavOpen(!navOpen)}>
+					{navOpen ? <X size={28} /> : <Menu size={28} />}
 				</div>
-				<div className='space-x-6'>
+
+				{/* Desktop Menu */}
+				<div className='hidden md:flex space-x-6 font-semibold'>
 					<Link
 						to='/'
 						className='hover:underline'>
@@ -33,6 +40,27 @@ const Navbar = ({ toggle }) => {
 					</Link>
 				</div>
 			</div>
+
+			{/* Mobile Menu */}
+			{navOpen && (
+				<div className='md:hidden flex flex-col items-center space-y-4 py-4 text-lg font-medium bg-green-800'>
+					<Link
+						to='/'
+						onClick={() => setNavOpen(false)}>
+						Home
+					</Link>
+					<Link
+						to='/services'
+						onClick={() => setNavOpen(false)}>
+						Services
+					</Link>
+					<Link
+						to='/contact'
+						onClick={() => setNavOpen(false)}>
+						Contact
+					</Link>
+				</div>
+			)}
 		</nav>
 	);
 };
