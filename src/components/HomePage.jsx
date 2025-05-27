@@ -5,12 +5,24 @@ import Reviews from './Reviews';
 import GetAQuotePage from './GetAQuotePage';
 import showcaseImg from '../assets/showcase-img copy 1.png';
 import AreasCovered from './AreasCovered';
+import sample1 from '../assets/sample1.jpg';
+import sample2 from '../assets/sample2.jpg';
+import sample3 from '../assets/sample5 copy.jpg';
 
 export default function HomePage() {
 	const services = [
-		{ title: 'Domestic Cleaning', image: '/images/domestic-cleaning.png' },
-		{ title: 'End of Tenancy Cleaning', image: '/images/end-of-tenancy.png' },
-		{ title: 'Garden Mowing & Care', image: '/images/lawn-mowing.png' },
+		{
+			title: 'Domestic Cleaning',
+			image: sample1,
+		},
+		{
+			title: 'End of Tenancy Cleaning',
+			image: sample3,
+		},
+		{
+			title: 'Garden Mowing & Care',
+			image: sample2,
+		},
 	];
 
 	return (
@@ -54,27 +66,18 @@ export default function HomePage() {
 					<h1 className='text-4xl font-bold text-blue-600'>
 						The Best Cleaning & Mowing Services
 					</h1>
-					<p className='mt-4 text-lg'>
-						Serving Harrow and the surrounding areas with top-tier cleaning and
-						lawn care solutions.
-					</p>
-					<img
-						src='/images/homepage-hero.png'
-						alt='Cleaning and Mowing Services'
-						className='rounded-xl mt-6 mx-auto'
-					/>
 				</header>
 
 				<section className='grid md:grid-cols-3 gap-6'>
 					{services.map(({ title, image }) => (
 						<Card
 							key={title}
-							className='shadow-lg'>
+							className='rounded-lg overflow-hidden shadow-lg bg-white'>
 							<CardContent>
 								<img
 									src={image}
 									alt={title}
-									className='rounded-xl mb-4'
+									className='rounded-xl h-64 w-full object-cover mb-4'
 								/>
 								<h2 className='text-xl font-semibold'>{title}</h2>
 							</CardContent>
