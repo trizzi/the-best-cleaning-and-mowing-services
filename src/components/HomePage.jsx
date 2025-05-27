@@ -4,6 +4,7 @@ import { Card, CardContent } from './Card';
 import Reviews from './Reviews';
 import GetAQuotePage from './GetAQuotePage';
 import showcaseImg from '../assets/showcase-img copy 1.png';
+import AreasCovered from './AreasCovered';
 
 export default function HomePage() {
 	const services = [
@@ -83,6 +84,7 @@ export default function HomePage() {
 			</div>
 			<GetAQuotePage />
 			<Reviews />
+			<AreasCovered />
 		</>
 	);
 }

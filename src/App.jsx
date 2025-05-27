@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
+import Footer from './components/FooterTop';
 import './App.css';
 
 function App() {
@@ -13,26 +14,6 @@ function App() {
 	return (
 		<Router>
 			<div className='bg-gray-50 min-h-screen'>
-				{/* <nav className='bg-green-700 text-white p-4 flex justify-between items-center'>
-					<h1 className='text-2xl font-bold'>The Best Cleaning & Mowing</h1>
-					<div className='space-x-6'>
-						<Link
-							to='/'
-							className='hover:underline'>
-							Home
-						</Link>
-						<Link
-							to='/services'
-							className='hover:underline'>
-							Services
-						</Link>
-						<Link
-							to='/contact'
-							className='hover:underline'>
-							Contact
-						</Link>
-					</div>
-				</nav> */}
 				<Navbar toggle={toggle} />
 				<Routes>
 					<Route
@@ -48,10 +29,7 @@ function App() {
 						element={<ContactPage />}
 					/>
 				</Routes>
-
-				<footer className='bg-green-700 text-white p-6 text-center mt-10'>
-					&copy; 2025 The Best Cleaning and Mowing Services — Harrow, London.
-				</footer>
+				<Footer />
 			</div>
 		</Router>
 	);
