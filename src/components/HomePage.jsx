@@ -5,6 +5,7 @@ import Reviews from './Reviews';
 import GetAQuotePage from './GetAQuotePage';
 import showcaseImg from '../assets/showcase-img copy 1.png';
 import AreasCovered from './AreasCovered';
+import FaqAccordion from './Faqs';
 import sample1 from '../assets/sample1.jpg';
 import sample2 from '../assets/sample2.jpg';
 import sample3 from '../assets/sample5 copy.jpg';
@@ -88,6 +89,7 @@ export default function HomePage() {
 			<GetAQuotePage />
 			<Reviews />
 			<AreasCovered />
+			<FaqAccordion />
 		</>
 	);
 }
