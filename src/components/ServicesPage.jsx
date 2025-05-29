@@ -17,6 +17,7 @@ import sample12 from '../assets/sample6.jpg';
 import sample13 from '../assets/sample3.jpg';
 import sample14 from '../assets/sample4.jpg';
 import sample15 from '../assets/sample5 copy.jpg';
+import ServiceEstimator from './ServiceEstimator';
 
 export default function ServicesPage() {
 	const services = [
@@ -96,6 +97,23 @@ export default function ServicesPage() {
 			desc: 'Intensive sanitisation for residential and commercial properties.',
 		},
 	];
+	const plans = [
+		{
+			title: 'Basic Plan',
+			price: '£50/mo',
+			benefits: ['2 Cleaning Sessions', 'Basic Garden Care'],
+		},
+		{
+			title: 'Standard Plan',
+			price: '£80/mo',
+			benefits: ['4 Cleaning Sessions', 'Lawn Mowing', 'Priority Support'],
+		},
+		{
+			title: 'Premium Plan',
+			price: '£120/mo',
+			benefits: ['Unlimited Cleaning', 'Full Garden Care', '24/7 Support'],
+		},
+	];
 
 	return (
 		<div className='bg-white text-gray-800 p-6 max-w-7xl mx-auto'>
@@ -126,6 +144,32 @@ export default function ServicesPage() {
 					</Card>
 				))}
 			</section>
+
+			<section className='max-w-5xl mx-auto p-6 bg-white rounded-xl shadow mt-10'>
+				<h2 className='text-2xl font-bold mb-4 text-green-700 text-center'>
+					Our Service Plans
+				</h2>
+				<div className='grid md:grid-cols-3 gap-6'>
+					{plans.map((plan, i) => (
+						<div
+							key={i}
+							className='border p-4 rounded-lg text-center'>
+							<h3 className='text-xl font-semibold mb-2'>{plan.title}</h3>
+							<p className='text-2xl font-bold mb-4'>{plan.price}</p>
+							<ul className='text-left space-y-2 mb-4'>
+								{plan.benefits.map((benefit, j) => (
+									<li key={j}>✅ {benefit}</li>
+								))}
+							</ul>
+							<button className='bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800'>
+								Subscribe
+							</button>
+						</div>
+					))}
+				</div>
+			</section>
+
+			<ServiceEstimator />
 		</div>
 	);
 }
