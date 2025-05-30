@@ -41,7 +41,7 @@ export default function HomePage() {
 								<div>The Best Cleaning & Mowing Services</div>
 							</h1>
 							<div className='relative md:text-xl pt-3 py-10 bg-white'>
-								professional cleaning and lawn care services in Harrow, London
+								professional cleaning and lawn care services in London
 							</div>
 							<p>
 								<Link to='#'>
