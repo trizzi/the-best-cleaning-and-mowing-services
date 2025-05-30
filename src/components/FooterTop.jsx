@@ -59,7 +59,8 @@ export default function Footer() {
 							<Phone size={18} /> <span>+44 7700 900123</span>
 						</li>
 						<li className='flex items-center gap-2'>
-							<Mail size={18} /> <span>info@bestcleaningmowing.co.uk</span>
+							<Mail size={18} />{' '}
+							<span>info@thebestcleaningandmowingservices.co.uk</span>
 						</li>
 						{/* <li className='flex items-center gap-2'>
 							<MapPin size={18} /> <span>123 Harrow Road, London, UK</span>
