@@ -61,9 +61,9 @@ export default function Footer() {
 						<li className='flex items-center gap-2'>
 							<Mail size={18} /> <span>info@bestcleaningmowing.co.uk</span>
 						</li>
-						<li className='flex items-center gap-2'>
+						{/* <li className='flex items-center gap-2'>
 							<MapPin size={18} /> <span>123 Harrow Road, London, UK</span>
-						</li>
+						</li> */}
 					</ul>
 
 					<div className='flex gap-4 mt-4'>
