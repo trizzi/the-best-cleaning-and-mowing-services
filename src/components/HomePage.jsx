@@ -9,6 +9,7 @@ import FaqAccordion from './Faqs';
 import sample1 from '../assets/sample1.jpg';
 import sample2 from '../assets/sample2.jpg';
 import sample3 from '../assets/sample5 copy.jpg';
+import ServiceAreaMap from './ServiceAreaMaps';
 
 export default function HomePage() {
 	const services = [
@@ -87,8 +88,10 @@ export default function HomePage() {
 				</section>
 			</div>
 			<GetAQuotePage />
-			<Reviews />
+
 			<AreasCovered />
+			<ServiceAreaMap />
+			<Reviews />
 			<FaqAccordion />
 		</>
 	);

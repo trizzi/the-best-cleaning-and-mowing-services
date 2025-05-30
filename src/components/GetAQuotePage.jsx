@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import BookingForm from './BookingForm';
 
 const GetAQuotePage = () => {
+	const [showBookingForm, setShowBookingForm] = useState(false);
+
+	const handleQuoteClick = () => {
+		setShowBookingForm(true);
+	};
+
+	const handleCloseForm = () => {
+		setShowBookingForm(false);
+	};
+
 	return (
 		<div className='bg-green-700 text-center text-white p-16 flex flex-col items-center justify-center min-h-screen'>
 			<div className='mb-8 animate-fadeIn'>
@@ -17,10 +28,14 @@ const GetAQuotePage = () => {
 				<button className='bg-amber-500 hover:bg-amber-600 text-white py-3 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out shadow-lg'>
 					Book Now!
 				</button>
-				<button className='bg-white hover:bg-gray-100 text-green-700 py-3 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out shadow-lg'>
+				<button
+					onClick={handleQuoteClick}
+					className='bg-white hover:bg-gray-100 text-green-700 py-3 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out shadow-lg'>
 					Get a Quote
 				</button>
 			</div>
+
+			{showBookingForm && <BookingForm handleClose={handleCloseForm} />}
 		</div>
 	);
 };
