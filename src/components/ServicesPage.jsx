@@ -120,7 +120,7 @@ export default function ServicesPage() {
 			<header className='text-center mb-10'>
 				<h1 className='text-4xl font-bold text-green-700'>Our Services</h1>
 				<p className='mt-4 text-lg'>
-					Top-quality cleaning & mowing services in Harrow, London
+					Top-quality cleaning & mowing services in London
 				</p>
 			</header>
 
