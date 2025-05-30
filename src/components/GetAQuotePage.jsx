@@ -16,7 +16,7 @@ const GetAQuotePage = () => {
 		<div className='bg-green-700 text-center text-white p-16 flex flex-col items-center justify-center min-h-screen'>
 			<div className='mb-8 animate-fadeIn'>
 				<h1 className='text-4xl md:text-5xl font-bold mb-4 leading-snug'>
-					Book a professional cleaning service in Harrow <br /> and enjoy a
+					Book a professional cleaning service in London <br /> and enjoy a
 					fresh and neat home!
 				</h1>
 				<p className='text-lg mt-2'>
