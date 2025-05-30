@@ -61,7 +61,7 @@ export default function ContactPage() {
 			<div className='mt-10 text-center'>
 				<p className='text-lg font-semibold mb-2'>📞 020 1234 5678</p>
 				<p className='mb-2'>📧 info@thebestcleaningmowing.co.uk</p>
-				<p>📍 Harrow, Greater London</p>
+				{/* <p>📍 Harrow, Greater London</p> */}
 			</div>
 		</div>
 	);
