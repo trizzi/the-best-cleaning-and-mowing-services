@@ -18,7 +18,7 @@ export default function Footer() {
 					</h2>
 					<p>
 						Delivering top-quality cleaning and mowing services to homes and
-						businesses in Harrow and beyond.
+						businesses in London.
 					</p>
 				</div>
 
