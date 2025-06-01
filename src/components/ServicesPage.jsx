@@ -10,7 +10,7 @@ import sample6 from '../assets/darek-baranowski-wDpTJjffxS8-unsplash.jpg';
 // Replace these with your new images later
 import sample7 from '../assets/cdc-VRpjDw3WqqI-unsplash.jpg';
 import sample8 from '../assets/georgi-zvezdov-jswzv99_k4o-unsplash.jpg';
-import sample9 from '../assets/sample3.jpg';
+import sample9 from '../assets/zahra-wijayanti-RPVLa9XdmtU-unsplash.jpg';
 import sample10 from '../assets/alex-tyson-bagSOlTC01o-unsplash.jpg';
 import sample11 from '../assets/pGosXGswbyJWuOo72ZgaA 1.svg';
 import sample12 from '../assets/frames-for-your-heart-JDBVXignFdA-unsplash.jpg';
@@ -28,7 +28,7 @@ export default function ServicesPage() {
 		},
 		{
 			title: 'Office & Commercial Cleaning',
-			image: sample9,
+			image: sample2,
 			desc: 'Reliable cleaning services for office spaces and commercial premises.',
 		},
 		{
