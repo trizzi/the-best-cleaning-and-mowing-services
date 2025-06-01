@@ -3,18 +3,18 @@ import { Card, CardContent } from './Card';
 import sample1 from '../assets/sample1.jpg';
 import sample2 from '../assets/sample2.jpg';
 import sample3 from '../assets/sample3.jpg';
-import sample4 from '../assets/sample4.jpg';
-import sample5 from '../assets/sample5 copy.jpg';
-import sample6 from '../assets/sample6.jpg';
+import sample4 from '../assets/KytNNnxDfnK-iqqXiX5qF 1.svg';
+import sample5 from '../assets/_PHFrTNKOKIS34X7fw1Bj 1.svg';
+import sample6 from '../assets/darek-baranowski-wDpTJjffxS8-unsplash.jpg';
 
 // Replace these with your new images later
-import sample7 from '../assets/sample1.jpg';
-import sample8 from '../assets/sample2.jpg';
+import sample7 from '../assets/cdc-VRpjDw3WqqI-unsplash.jpg';
+import sample8 from '../assets/georgi-zvezdov-jswzv99_k4o-unsplash.jpg';
 import sample9 from '../assets/sample3.jpg';
-import sample10 from '../assets/sample4.jpg';
-import sample11 from '../assets/sample5 copy.jpg';
-import sample12 from '../assets/sample6.jpg';
-import sample13 from '../assets/sample3.jpg';
+import sample10 from '../assets/alex-tyson-bagSOlTC01o-unsplash.jpg';
+import sample11 from '../assets/pGosXGswbyJWuOo72ZgaA 1.svg';
+import sample12 from '../assets/frames-for-your-heart-JDBVXignFdA-unsplash.jpg';
+import sample13 from '../assets/CvMxMP_O1Q6mnF1epMm3l 1.svg';
 import sample14 from '../assets/sample4.jpg';
 import sample15 from '../assets/sample5 copy.jpg';
 import ServiceEstimator from './ServiceEstimator';
@@ -28,12 +28,12 @@ export default function ServicesPage() {
 		},
 		{
 			title: 'Office & Commercial Cleaning',
-			image: sample2,
+			image: sample9,
 			desc: 'Reliable cleaning services for office spaces and commercial premises.',
 		},
 		{
 			title: 'End of Tenancy Cleaning',
-			image: sample3,
+			image: sample15,
 			desc: 'Detailed move-in and move-out cleaning for landlords and tenants.',
 		},
 		{
@@ -88,7 +88,7 @@ export default function ServicesPage() {
 		},
 		{
 			title: 'Commercial Grounds Care',
-			image: sample14,
+			image: sample8,
 			desc: 'Professional upkeep for your business premises exterior.',
 		},
 		{
